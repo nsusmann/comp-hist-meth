@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A teaching guide to computational historical research methods." />
+    <title>Computational Historical Research Methods</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b3154'/%3E%3Cpath d='M17 15h30v6H17zm0 14h30v6H17zm0 14h20v6H17z' fill='%23f3c969'/%3E%3Ccircle cx='46' cy='46' r='8' fill='%23d85b43'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="lesson-page">
+    <a class="skip-link" href="#content">Skip to main content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Computational Historical Research Methods, home">
+        <span class="wordmark-mark" aria-hidden="true">NMS</span>
+        <span>Computational History</span>
+      </a>
+      <nav aria-label="Page sections">
+        <a href="#takeaways">Big Takeaways</a>
+        <a href="#steps">Steps</a>
+        <a href="#resources">Resources</a>
+        <a href="dataset.html">Dataset</a>
+        <a href="map.html">Map</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <aside class="ownership-notice">
+        All data and materials on this page are the intellectual property of Dr. Natalie M. Susmann.
+        This page was created for a teaching demonstration and no data or materials should be
+        reproduced without her permission.
+      </aside>
+
+      <article class="lesson-sheet" id="top">
+        <header class="lesson-title">
+          <h1>Computational Historical Research Methods</h1>
+          <p class="lesson-author">
+            <a href="https://scholarworks.brandeis.edu/esploro/profile/natalie_susmann">Dr. Natalie M. Susmann</a>
+          </p>
+          <a class="text-download" href="data/Computational_Historical_Research_Methods.pdf" download>
+            Download the original lesson as a PDF
+          </a>
+        </header>
+
+        <section id="takeaways" aria-labelledby="takeaways-title">
+          <h2 id="takeaways-title">Big Takeaways</h2>
+          <ol class="plain-list numbered-takeaways">
+            <li>Everything is a dataset!</li>
+            <li>
+              You need to transform your sources into a functional dataset (this means you need to make a database).
+              <ul class="resource-list">
+                <li><a href="data/DSH_Tutorial_Spreadsheet.pdf">Transform your sources into a spreadsheet tutorial</a> (PDF)</li>
+              </ul>
+            </li>
+            <li>
+              Primary analytical and visualization modes:
+              <ul>
+                <li>Graphical</li>
+                <li>Spatial</li>
+              </ul>
+            </li>
+            <li>
+              Be wary of making a “digital interface” (e.g., StoryMap) or public-facing website your end goal.
+              You need to ask yourself: what's the best mechanism for disseminating the work? Is public
+              dissemination my real goal?
+            </li>
+          </ol>
+        </section>
+
+        <section id="steps" aria-labelledby="steps-title">
+          <h2 id="steps-title">Steps</h2>
+          <ol class="lesson-steps">
+            <li>
+              <h3>Acknowledge your larger research project/question.</h3>
+              <p class="source-example">
+                <em>I am studying the sacred landscape of Profitis Ilias on Patmos, from the Bronze Age to the present
+                day, with a key focus on the Monastery of Saint John the Theologian, which is located on its summit. How
+                does the sacred catchment (spatial influence) of Saint John the Theologian’s Monastery on Patmos change
+                depending on the historical period, and identity groups?</em>
+              </p>
+            </li>
+
+            <li>
+              <h3>Tease out a very specific research question.</h3>
+              <p class="source-example">
+                <em>Is Saint John the Theologian represented in churches/monasteries/private chapels located off of
+                Profitis Ilias?</em>
+              </p>
+            </li>
+
+            <li>
+              <h3>Push back: can computational analysis improve my ability to collect or manage the data, analyze it, or disseminate the work?</h3>
+              <p>
+                Here’s an example of a
+                <a href="https://nsusmann.github.io/patmos_public_tourism/">text analysis interface</a>
+                I created to make my own writing process easier.
+              </p>
+            </li>
+
+            <li id="operationalize">
+              <h3>Operationalize your question:</h3>
+              <p>
+                You need to consider what modality best addresses your question <strong>and</strong> the limitations of
+                your study (e.g., how much time you have to do it).
+              </p>
+              <div class="operational-flow" aria-label="Dataset to analytical mode to specific output">
+                <section class="flow-step">
+                  <span class="flow-number">1</span>
+                  <strong>Dataset(s)</strong>
+                  <p><em>Excel table of churches on Patmos, with characteristics like dedication, year of construction, etc.</em></p>
+                  <a href="dataset.html">View the Patmos_Data table</a>
+                </section>
+                <span class="flow-arrow" aria-hidden="true">→</span>
+                <section class="flow-step">
+                  <span class="flow-number">2</span>
+                  <strong>Analytical Mode</strong>
+                  <p><em>Spatial distribution.</em></p>
+                  <a href="map.html">Explore the church map</a>
+                </section>
+                <span class="flow-arrow" aria-hidden="true">→</span>
+                <section class="flow-step">
+                  <span class="flow-number">3</span>
+                  <strong>Specific output</strong>
+                  <p><em>A map showing the distribution of churches color coded based on their dedication.</em></p>
+                </section>
+              </div>
+
+              <p class="source-example final-example">
+                <em>Alternatively, I could have elected to create a graph showing the distribution of saint dedications
+                per sacred space on the island. For the purposes of my argument and broader questions pertaining to
+                landscape, the map approach is more appropriate.</em>
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section id="resources" aria-labelledby="resources-title">
+          <h2 id="resources-title">Resources</h2>
+          <p>
+            <a href="https://scholarworks.brandeis.edu/esploro/profile/natalie_susmann">Dr. Natalie Susmann</a>
+            runs the <a href="https://www.brandeis.edu/library/design-innovation/digital-scholarship.html">Digital Scholarship Lab</a>
+            at <a href="https://www.brandeis.edu/library/design-innovation/">Brandeis Design and Innovation</a>.
+            Natalie works with graduate students and faculty about research design and data management methodologies,
+            including how to transform their sources into a useable digital dataset. I recommend checking out
+            <a href="https://guides.library.brandeis.edu/dataservices">Brandeis Data Services</a>, who teaches in-depth
+            workshops about text analysis and survey data collection using programs like STATA.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>Copyright Dr. Natalie M. Susmann. October 5, 2026. Brandeis Design and Innovation.</p>
+      <div class="footer-links">
+        <a href="how-i-made-this-site.html">How I made this site</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>

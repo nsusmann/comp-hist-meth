@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An interactive map of church records on Patmos." />
+    <title>Patmos Church Map | Computational Historical Research Methods</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b3154'/%3E%3Cpath d='M17 15h30v6H17zm0 14h30v6H17zm0 14h20v6H17z' fill='%23f3c969'/%3E%3Ccircle cx='46' cy='46' r='8' fill='%23d85b43'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script src="data/patmos-map.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="map.js" defer></script>
+  </head>
+  <body class="map-page">
+    <a class="skip-link" href="#map-workspace">Skip to map</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">
+        <span class="wordmark-mark" aria-hidden="true">NMS</span>
+        <span>Computational History</span>
+      </a>
+      <a class="back-link" href="index.html#operationalize">Back to the methods guide</a>
+    </header>
+
+    <main id="map-workspace">
+      <aside class="ownership-notice dataset-notice">
+        This data is the property of Dr. Natalie M. Susmann. Do not reproduce it without my
+        permission. I am sharing it here for a teaching demonstration, and because it is part of an
+        ongoing research project, am electing to not share details about its function.
+      </aside>
+
+      <section class="map-intro">
+        <div>
+          <p class="eyebrow">Spatial analysis</p>
+          <h1>Churches of Patmos</h1>
+          <p>
+            Compare the same locations through three visual encodings. Map positions use teaching-level
+            precision; coordinate values are not displayed.
+          </p>
+        </div>
+
+        <fieldset class="map-modes" aria-label="Choose how markers are styled">
+          <legend>Display churches by</legend>
+          <label><input type="radio" name="map-mode" value="single" checked /> Single symbol</label>
+          <label><input type="radio" name="map-mode" value="year" /> Year of creation</label>
+          <label><input type="radio" name="map-mode" value="dedication" /> Dedication</label>
+        </fieldset>
+      </section>
+
+      <section class="map-layout">
+        <div class="map-frame">
+          <div id="church-map" aria-label="Interactive map showing church locations on Patmos"></div>
+        </div>
+
+        <aside class="map-legend" aria-live="polite">
+          <p class="example-kicker">Legend</p>
+          <h2 data-legend-title>Single symbol</h2>
+          <div data-legend-items></div>
+          <p class="map-count"><span data-map-count>104</span> mapped records</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright Dr. Natalie M. Susmann. October 5, 2026. Brandeis Design and Innovation.</p>
+      <a href="index.html">Return to the guide</a>
+    </footer>
+  </body>
+</html>
