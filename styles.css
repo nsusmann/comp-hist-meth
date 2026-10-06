@@ -389,6 +389,7 @@ footer p { margin: 0; }
 .takeaway-card:nth-child(2) { border-top-color: var(--blue); }
 .takeaway-card:nth-child(3) { border-top-color: var(--coral); }
 .takeaway-card:nth-child(4) { border-top-color: #c59619; }
+.takeaway-card-wide { grid-column: 1 / -1; min-height: 190px; }
 .takeaway-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.7rem; }
 .takeaway-card-number {
   color: var(--navy);
@@ -457,6 +458,17 @@ footer p { margin: 0; }
 .process-page .lesson-sheet > p, .process-page .lesson-sheet li { font-size: 1.06rem; }
 .process-page .lesson-sheet ol { padding-left: 1.6rem; }
 .process-page .lesson-sheet li { margin-bottom: 1.2rem; padding-left: 0.35rem; }
+.footnote-ref { margin-left: 0.1rem; font-size: 0.72em; line-height: 0; }
+.footnote-ref a { color: var(--coral); font-weight: 850; text-decoration: none; }
+.footnote-section {
+  margin: 1.75rem 0 2.5rem;
+  padding-top: 1rem;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+}
+.process-page .footnote-section p { margin: 0; font-size: 0.94rem; line-height: 1.65; }
+.footnote-number { color: var(--coral); font-weight: 850; }
+.footnote-back { margin-left: 0.35rem; font-weight: 750; white-space: nowrap; }
 .model-note { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--ink-soft); }
 
 @media (max-width: 560px) {
@@ -465,6 +477,7 @@ footer p { margin: 0; }
   .lesson-sheet section { margin-top: 2.5rem; }
   .takeaway-cards { grid-template-columns: 1fr; }
   .takeaway-card { min-height: auto; }
+  .takeaway-card-wide { grid-column: auto; }
   .takeaway-card-link, .takeaway-modes { margin-top: 1.2rem; }
   .operational-flow { grid-template-columns: 1fr; }
   .flow-arrow { transform: rotate(90deg); justify-self: center; }
