@@ -1,5 +1,7 @@
 # Computational Historical Research Methods
 
+[View the teaching site](https://nsusmann.github.io/comp-hist-meth/)
+
 A teaching site built from the supplied course text. It is designed to be published with GitHub Pages and includes clearly marked slots for additional examples, a searchable table of the `Patmos_Data` worksheet, and downloadable spreadsheet teaching materials.
 
 ## Preview locally
